@@ -17,3 +17,8 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 
 https://github.com/sng-jroji/hulud-party
 
+
+
+# Source:
+
+https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages
