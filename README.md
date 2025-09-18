@@ -1,6 +1,6 @@
 # tl;dr
 
-Reads your “dodgy packages” from an external source (file or URL) via --list <path|url>.
+Reads your “shai hulud” from an external source (file or URL) via --list <path|url>.
 
 Scans recursively for package.json (excluding node_modules) and checks:
 
@@ -13,12 +13,21 @@ Lockfiles in the same project dir: package-lock.json, npm-shrinkwrap.json, yarn.
 Outputs TSV: STATUS PACKAGE@VERSION PATH.
 
 
-# Also see:
+## how to run:
 
-https://github.com/sng-jroji/hulud-party
+```shell
+git clone https://github.com/sunnysideup/scan-for-bad-npm-packages.git
+sudo bash scan-for-bad-npm-packages/scan-for-packages.sh --list scan-for-bad-npm-packages/compromised-all.txt
+sudo bash scan-for-bad-npm-packages/scan-for-bad-strings.sh --list scan-for-bad-npm-packages/bad-string.txt
+```
+
+## Also do
+
+Check your github account for any untoward changes. 
+
+## Also see
+
+- https://github.com/sng-jroji/hulud-party
+- https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages
 
 
-
-# Source:
-
-https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages
