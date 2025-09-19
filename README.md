@@ -15,7 +15,7 @@ Scans recursively for package.json (excluding node_modules) and checks:
 Outputs TSV: STATUS PACKAGE@VERSION PATH.
 
 
-## how to run:
+## how to run
 
 
 ```shell
