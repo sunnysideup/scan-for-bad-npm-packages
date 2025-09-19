@@ -37,7 +37,7 @@ if [[ -f "$compromisedFile" ]]; then
   for pkg in "${compromised[@]}"; do
     echo "--- Searching manifests for: $pkg ---"
     grep -RsnFH --color=always -I "${EXCLUDES[@]}" "${INCLUDES[@]}" -- "$pkg" . 2>/dev/null \
-      || echo "No manifest/lock matches for: $pkg"
+      || echo "OK"
     echo
   done
 else
