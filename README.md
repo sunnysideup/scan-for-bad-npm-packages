@@ -17,11 +17,18 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 
 ## how to run:
 
+
 ```shell
 git clone https://github.com/sunnysideup/scan-for-bad-npm-packages.git
-sudo bash scan-for-bad-npm-packages/scan-for-packages.sh --list scan-for-bad-npm-packages/compromised-all.txt
+# quick scan
+sudo bash scan-for-bad-npm-packages/scan-for-suspect-packages.sh
 sudo bash scan-for-bad-npm-packages/scan-for-bad-strings.sh --list scan-for-bad-npm-packages/bad-string.txt
+### more detailed scan
+sudo bash scan-for-bad-npm-packages/scan-for-packages.sh --list scan-for-bad-npm-packages/compromised-all.txt
+sudo bash scan-for-bad-npm-packages/scan-for-packages-alternative.sh --list scan-for-bad-npm-packages/compromised-all.txt
 ```
+
+Ideally, you would run this on all directories that may contain npm pacakges. 
 
 ## Also do
 
