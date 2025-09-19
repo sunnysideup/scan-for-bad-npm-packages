@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+LIST_SRC="$scriptDir/compromised-all.txt"
+
+
+
 usage(){ echo "Usage: $0 --list <file_or_url> [--jobs N]"; exit 1; }
 
-LIST_SRC=""; JOBS="${JOBS:-}"
+JOBS="${JOBS:-}"
 while [ $# -gt 0 ]; do
   case "${1:-}" in
     --list) LIST_SRC="${2:-}"; shift 2 ;;
