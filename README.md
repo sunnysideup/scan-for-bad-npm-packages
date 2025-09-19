@@ -1,3 +1,7 @@
+# status
+
+this is just a bit of a hack right now, Nothing useful yet. Please use at your own risk!!!!!!!!!!!!!
+
 # tl;dr
 
 Scans for possible “shai hulud” attacks using an external source for list of possible attack strings (file or URL) via --list <path|url>.
