@@ -1,0 +1,13 @@
+{
+    "name": "sunnysideup/scan-for-bad-npm-packages",
+    "description": "Scans for Shai Hulud and other bad npm packages. USE AT YOUR OWN RISK!",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolaas",
+            "email": "github@sunnysideup.co.nz"
+        }
+    ],
+    "require": {}
+}
