@@ -38,5 +38,7 @@ Check your github account for any untoward changes.
 
 - https://github.com/sng-jroji/hulud-party
 - https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages
+- https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack
+- https://github.com/safedep/shai-hulud-migration-response
 
 
