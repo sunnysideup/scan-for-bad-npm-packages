@@ -27,13 +27,15 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 ### scan your computer
 
 ```shell
-git clone https://github.com/sunnysideup/scan-for-bad-npm-packages.git
-# quick scan
-sudo bash scan-for-bad-npm-packages/scan-for-suspect-packages.sh
-sudo bash scan-for-bad-npm-packages/scan-for-bad-strings.sh --list scan-for-bad-npm-packages/bad-string.txt
-### more detailed scan
-sudo bash scan-for-bad-npm-packages/scan-for-packages.sh --list scan-for-bad-npm-packages/compromised-all.txt
-sudo bash scan-for-bad-npm-packages/scan-for-packages-alternative.sh --list scan-for-bad-npm-packages/compromised-all.txt
+# Ensure temp dir exists
+mkdir -p "/var/www/tmpm"
+
+# Clone repository (remove old copy first)
+rm -rf "scan-for-bad-npm-packages"
+git clone "https://github.com/sunnysideup/scan-for-bad-npm-packages.git" "can-for-bad-npm-packages"
+
+sudo bash run.sh
+
 ```
 
 Ideally, you would run this on your whole machine. 
