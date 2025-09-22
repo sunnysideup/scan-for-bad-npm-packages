@@ -17,9 +17,7 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 
 ## how to run
 
-
-
-### check first:
+### check first
 
 - run `nano /tmp/processor.sh` to see if it exists
 - run `nano /tmp/migrate-repos.sh` to see if it exists 
@@ -38,7 +36,7 @@ sudo bash scan-for-bad-npm-packages/scan-for-packages.sh --list scan-for-bad-npm
 sudo bash scan-for-bad-npm-packages/scan-for-packages-alternative.sh --list scan-for-bad-npm-packages/compromised-all.txt
 ```
 
-Ideally, you would run this on all directories that may contain npm pacakges. 
+Ideally, you would run this on your whole machine. 
 
 ## Also do
 
