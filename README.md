@@ -28,13 +28,14 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 
 ```shell
 # Ensure temp dir exists
-mkdir -p "/var/www/tmpm"
+mkdir -p /var/www/tmp
 
+cd /var/www/tmp
 # Clone repository (remove old copy first)
-rm -rf "scan-for-bad-npm-packages"
-git clone "https://github.com/sunnysideup/scan-for-bad-npm-packages.git" "can-for-bad-npm-packages"
+rm -rf scan-for-bad-npm-packages
+git clone https://github.com/sunnysideup/scan-for-bad-npm-packages.git scan-for-bad-npm-packages
 
-sudo bash run.sh
+sudo bash scan-for-bad-npm-packages/run.sh
 
 ```
 
