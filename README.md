@@ -17,9 +17,14 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 
 ## how to run
 
+
+
 ### check first:
-- https://github.com/search?q=Shai-Hulud+org%3APLACEHOLDER&type=repositories&s=updated&o=desc (source: https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack) 
-- https://github.com/search?q=%22Shai-Hulud+Migration%22+org%3APLACEHOLDER&type=repositories&s=updated&o=desc (source: https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack)
+
+- run `nano /tmp/processor.sh` to see if it exists
+- run `nano /tmp/migrate-repos.sh` to see if it exists 
+- open: https://github.com/search?q=Shai-Hulud+org%3APLACEHOLDER&type=repositories&s=updated&o=desc (source: https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack) 
+- open: https://github.com/search?q=%22Shai-Hulud+Migration%22+org%3APLACEHOLDER&type=repositories&s=updated&o=desc (source: https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack)
 
 ### scan your computer
 
