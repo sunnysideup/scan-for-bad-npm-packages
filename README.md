@@ -29,7 +29,15 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 # clean npm cache
 npm cache clean --force
 # remove all existing node_modules folders
-sudo find / -type d -name "node_modules" -exec rm -rf "{}";  
+# Delete
+sudo find / -type d -name 'node_modules' \
+  -exec bash -c '
+    if find "$1" -type f -newermt "2025-09-01" -quit | grep -q .; then
+      rm -rf "$1"
+      echo "Deleted: $1"
+    fi
+  ' _ {} \;
+
 ```
 
 ### scan your computer
