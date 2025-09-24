@@ -24,10 +24,10 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 - open: https://github.com/search?q=Shai-Hulud+org%3APLACEHOLDER&type=repositories&s=updated&o=desc (source: https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack) 
 - open: https://github.com/search?q=%22Shai-Hulud+Migration%22+org%3APLACEHOLDER&type=repositories&s=updated&o=desc (source: https://www.wiz.io/blog/shai-hulud-npm-supply-chain-attack)
 
-### run first
+### run first (CAREFUL!!!!)
 ```shell
 npm cache clean --force
-sudo find / -type -d -name "node_modules" -exec rm -rf "{}";  
+sudo find / -type d -name "node_modules" -exec rm -rf "{}";  
 ```
 
 ### scan your computer
