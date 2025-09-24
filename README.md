@@ -26,7 +26,9 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 
 ### run first (CAREFUL!!!!)
 ```shell
+# clean npm cache
 npm cache clean --force
+# remove all existing node_modules folders
 sudo find / -type d -name "node_modules" -exec rm -rf "{}";  
 ```
 
