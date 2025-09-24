@@ -28,8 +28,7 @@ Outputs TSV: STATUS PACKAGE@VERSION PATH.
 ```shell
 # clean npm cache
 npm cache clean --force
-# remove all existing node_modules folders
-# Delete
+# remove all existing node_modules folders changed since september
 sudo find / -type d -name 'node_modules' \
   -exec bash -c '
     if find "$1" -type f -newermt "2025-09-01" -quit | grep -q .; then
